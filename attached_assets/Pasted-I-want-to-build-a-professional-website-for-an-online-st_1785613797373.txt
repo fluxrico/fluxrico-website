@@ -1,0 +1,49 @@
+I want to build a professional website for an online store called "Fluxrico" 
+that sells a variety of digital products (icons, templates, and other design 
+assets created with AI assistance combined with a professional human design 
+touch). The first available product is a minimalist icon pack for the 
+E-commerce & Shopping category, with plans to add more categories and other 
+digital products later on.
+
+Logo and visual identity (already exists — must be built upon precisely):
+- The Fluxrico logo is an infinity symbol made of interlocking curved lines, 
+  with a gradient from deep blue to purple, transitioning into a light 
+  purple/pink shade
+- The name "Fluxrico" is written in a bold, modern sans-serif font using the 
+  same gradient (blue → purple)
+- Extract the same color system (gradient: deep blue ~#1e3a8a to light 
+  purple ~#c084fc) and use it as a unified identity throughout the site 
+  (buttons, headings, highlights, hover effects)
+- The background should be white/very light to make the logo's gradient 
+  stand out, as in the original design
+- Upload the two attached logo files and use them in the Header, Favicon, 
+  and Footer
+
+Technical requirements:
+- Stack: React + Tailwind CSS (or Next.js if available)
+- Fully responsive (mobile, tablet, desktop)
+- Home page (Landing Page)
+- Product Gallery page with filtering by category/type (icons, templates, 
+  etc.) — built so new product categories can easily be added in the future
+- Individual Product Detail page
+- "About" page telling the brand's story as a comprehensive digital 
+  products platform, not just an icon shop
+- Contact/Support page
+- Footer with logo, links, and social media icons
+
+Core messaging/content:
+- A general headline reflecting that Fluxrico is a digital products 
+  platform for designers and entrepreneurs, not just an icon store
+- A section highlighting current and upcoming product categories 
+  (Icons Available Now, Templates Coming Soon... etc.)
+- A section highlighting curation quality and visual consistency as the 
+  key differentiator (USP)
+- A "How It Works" section (Choose, Download, Use) in three simple steps
+- A clear CTA to browse the first available icon collection
+
+Important notes:
+- Do not use generic, templated designs — design something that reflects 
+  Fluxrico's actual attached visual identity
+- The design should feel scalable to accommodate multiple digital product 
+  categories in the future, not built solely around icons
+- The site targets a global market, so all content should be in English

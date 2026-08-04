@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Fluxrico"
+description = "A professional multi-page website and online store for Fluxrico, a digital products platform selling AI-assisted design assets (icon packs, templates, etc.) for designers and entrepreneurs. Includes a landing page, product gallery with filtering, individual product detail pages, About page, and Contact/Support page — all built around the Fluxrico brand identity (blue-to-purple gradient)."
+version = "1.0.0"
+id = "artifacts/fluxrico"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22594
+
+[services.development]
+run = "pnpm --filter @workspace/fluxrico run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/fluxrico", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/fluxrico/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22594"
+BASE_PATH = "/"

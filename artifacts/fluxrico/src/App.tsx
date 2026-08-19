@@ -18,7 +18,10 @@ import logoCompact from '@assets/Fluxrico_(1)_1785613812487.png';
 import heroAbstract from './assets/hero-abstract.png';
 import iconPreviewOne from './assets/icon-preview-1.png';
 import iconPreviewTwo from './assets/icon-preview-2.png';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Shop from './pages/Shop';
+import ProductDetail from './pages/ProductDetail';
+import NotFound from './pages/not-found';
 const navItems = [
   { label: 'Collections', href: '#collections' },
   { label: 'The Fluxrico way', href: '#method' },

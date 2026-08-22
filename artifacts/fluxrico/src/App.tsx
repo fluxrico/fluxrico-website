@@ -361,7 +361,7 @@ function Home() {
             <img src={logoCompact} alt="" className="cta-mark" aria-hidden="true" />
             <div className="section-kicker section-kicker--light"><span>Start with the good stuff</span><span className="kicker-rule" /></div>
             <h2 id="cta-title">Your next idea<br /><em>is already moving.</em></h2>
-            <a className="light-button" href="#featured" data-testid="button-browse-collection">
+            <a className="light-button" href="/shop" data-testid="button-browse-collection">
               Browse the collection <ArrowRight size={17} />
             </a>
           </div>
@@ -375,7 +375,7 @@ function Home() {
             <span>Digital products for<br />forward-thinking creators.</span>
           </a>
           <div className="footer-links">
-            <div><span className="footer-label">Explore</span><a href="#collections" data-testid="link-footer-collections">Collections</a><a href="#featured" data-testid="link-footer-icons">Icon pack</a></div>
+            <div><span className="footer-label">Explore</span><a href="/shop" data-testid="link-footer-collections">Collections</a><a href="/shop/ecommerce-shopping-icons" data-testid="link-footer-icons">Icon pack</a></div>
             <div><span className="footer-label">Connect</span><a href="mailto:hello@fluxrico.com" data-testid="link-footer-email">Email us</a><a href="#contact" data-testid="link-footer-support">Support</a></div>
             <div><span className="footer-label">Follow along</span><div className="social-links"><a href="#contact" aria-label="Instagram" data-testid="link-instagram"><Instagram size={17} /></a><a href="#contact" aria-label="Dribbble" data-testid="link-dribbble">Dr</a><a href="#contact" aria-label="X" data-testid="link-x">X</a></div></div>
           </div>

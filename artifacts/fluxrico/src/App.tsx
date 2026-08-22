@@ -22,6 +22,9 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Shop from './pages/Shop';
 import ProductDetail from './pages/ProductDetail';
 import NotFound from './pages/not-found';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import RefundPolicy from './pages/RefundPolicy';
 const navItems = [
   { label: 'Shop', href: '/shop' },
   { label: 'Collections', href: '#collections' },
@@ -393,9 +396,14 @@ function Router() {
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/shop/:productId" element={<ProductDetail />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
+  );
+}
   );
 }
 

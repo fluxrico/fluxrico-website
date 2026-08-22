@@ -23,6 +23,7 @@ import Shop from './pages/Shop';
 import ProductDetail from './pages/ProductDetail';
 import NotFound from './pages/not-found';
 const navItems = [
+  { label: 'Shop', href: '/shop' },
   { label: 'Collections', href: '#collections' },
   { label: 'The Fluxrico way', href: '#method' },
   { label: 'About', href: '#about' },
@@ -97,10 +98,9 @@ function Home() {
           ))}
         </nav>
 
-        <div className="header-actions">
-          <a className="header-shop-link" href="#featured" data-testid="link-shop-now">
-            Shop the library <ArrowUpRight size={16} strokeWidth={1.8} />
-          </a>
+        <Link className="header-shop-link" to="/shop" data-testid="link-shop-now">
+    Shop the library <ArrowUpRight size={16} strokeWidth={1.8} />
+      </Link>
           <button
             className="mobile-menu-trigger"
             type="button"
@@ -259,7 +259,7 @@ function Home() {
           <div className="category-grid">
             {categories.map((category, index) => (
               <motion.a
-                href={index === 0 ? '#featured' : '#collections'}
+                href={index === 0 ? '/shop/ecommerce-shopping-icons' : '#collections'}
                 className={category.className}
                 key={category.title}
                 initial="hidden"
@@ -299,7 +299,7 @@ function Home() {
               <div><span>03</span><small>formats</small></div>
               <div><span>$19</span><small>one-time</small></div>
             </div>
-            <a className="outline-button" href="#featured-preview" data-testid="button-view-icon-pack">
+            <a className="outline-button" href="/shop/ecommerce-shopping-icons" data-testid="button-view-icon-pack">
               View collection <MoveUpRight size={17} />
             </a>
           </div>

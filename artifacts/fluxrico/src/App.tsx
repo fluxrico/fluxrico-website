@@ -97,7 +97,7 @@ function Home() {
             </a>
           ))}
         </nav>
-
+<div className="header-actions">
         <Link className="header-shop-link" to="/shop" data-testid="link-shop-now">
     Shop the library <ArrowUpRight size={16} strokeWidth={1.8} />
       </Link>

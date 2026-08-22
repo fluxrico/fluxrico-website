@@ -133,7 +133,7 @@ function Home() {
                   {item.label}
                 </a>
               ))}
-              <a href="#featured" onClick={() => setMobileMenuOpen(false)} data-testid="link-mobile-shop">
+              <a href="/shop" onClick={() => setMobileMenuOpen(false)} data-testid="link-mobile-shop">
                 Shop the library <ArrowUpRight size={16} />
               </a>
             </motion.nav>

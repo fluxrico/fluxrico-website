@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, Check, Download, Package } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { getProductById } from '../data/products';
+import { useSeo } from '../lib/useSeo';
 import logoHorizontal from '@assets/Fluxrico_(2)_1785613812245.png';
 import './shop.css';
 
@@ -20,6 +21,10 @@ const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string | u
 function ProductDetail() {
   const { productId } = useParams();
   const product = productId ? getProductById(productId) : undefined;
+  useSeo(
+    product ? `${product.title} — Fluxrico` : 'Product not found — Fluxrico',
+    product?.description
+  );
   const paypalRef = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState<'idle' | 'paid' | 'error'>('idle');
   const [buyerEmail, setBuyerEmail] = useState('');

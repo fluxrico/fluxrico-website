@@ -3,8 +3,14 @@ import { ArrowLeft } from 'lucide-react';
 import logoHorizontal from '@assets/Fluxrico_(2)_1785613812245.png';
 import './shop.css';
 import './legal.css';
+import { useSeo } from '../lib/useSeo';
 
 function PrivacyPolicy() {
+  useSeo(
+    'Privacy Policy — Fluxrico',
+    'How Fluxrico collects, uses, and protects your personal information.'
+  );
+
   return (
     <div className="fluxrico-site shop-page">
       <header className="site-header">

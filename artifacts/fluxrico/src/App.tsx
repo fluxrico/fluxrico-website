@@ -403,8 +403,8 @@ function Router() {
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
-  );
-}
+ 
+
   );
 }
 

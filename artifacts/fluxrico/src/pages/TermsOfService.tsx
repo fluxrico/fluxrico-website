@@ -3,8 +3,14 @@ import { ArrowLeft } from 'lucide-react';
 import logoHorizontal from '@assets/Fluxrico_(2)_1785613812245.png';
 import './shop.css';
 import './legal.css';
+import { useSeo } from '../lib/useSeo';
 
 function TermsOfService() {
+  useSeo(
+    'Terms of Service — Fluxrico',
+    'The terms governing your use of Fluxrico and purchase of our digital products.'
+  );
+
   return (
     <div className="fluxrico-site shop-page">
       <header className="site-header">

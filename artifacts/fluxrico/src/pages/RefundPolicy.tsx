@@ -5,8 +5,13 @@ import './shop.css';
 import './legal.css';
 import { useSeo } from '../lib/useSeo';
 
-function PrivacyPolicy() {
+function RefundPolicy() {
   useSeo(
+    'Refund Policy — Fluxrico',
+    'Learn when refunds are available for Fluxrico digital products.'
+  );
+
+  return (
     'Privacy Policy — Fluxrico',
     'How Fluxrico collects, uses, and protects your personal information.'
   );

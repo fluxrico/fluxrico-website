@@ -1,11 +1,18 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, Package } from 'lucide-react';
 import { products } from '../data/products';
+import { useSeo } from '../lib/useSeo';
 import logoHorizontal from '@assets/Fluxrico_(2)_1785613812245.png';
 import './shop.css';
 
 function Shop() {
+  useSeo(
+    'Shop — Fluxrico',
+    'Browse the full Fluxrico library of digital design assets: icon packs, templates, and UI kits.'
+  );
+
   return (
+ 
     <div className="fluxrico-site shop-page">
       <header className="site-header">
         <Link className="brand-link" to="/" data-testid="link-brand">

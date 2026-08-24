@@ -3,6 +3,7 @@ import { ArrowLeft } from 'lucide-react';
 import logoHorizontal from '@assets/Fluxrico_(2)_1785613812245.png';
 import './shop.css';
 import './legal.css';
+import Footer from './Footer';
 import { useSeo } from '../lib/useSeo';
 
 function TermsOfService() {
@@ -87,11 +88,7 @@ function TermsOfService() {
         </p>
       </main>
 
-      <footer className="site-footer">
-        <div className="footer-bottom">
-          <span>© 2026 Fluxrico. Made for the curious.</span>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

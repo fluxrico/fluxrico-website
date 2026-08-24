@@ -23,7 +23,7 @@ function Footer() {
         </div>
 
         <div className="footer-col">
-          <span className="footer-label">Site</span>
+          <span className="footer-col-label">Site</span>
           <Link to="/" data-testid="link-footer-home">Home</Link>
           <Link to="/shop" data-testid="link-footer-shop">Shop</Link>
           <a href="/#about" data-testid="link-footer-about">About</a>
@@ -31,28 +31,28 @@ function Footer() {
         </div>
 
         <div className="footer-col">
-          <span className="footer-label">Legal</span>
+          <span className="footer-col-label">Legal</span>
           <Link to="/terms-of-service" data-testid="link-footer-terms">Terms of Service</Link>
           <Link to="/privacy-policy" data-testid="link-footer-privacy">Privacy Policy</Link>
           <Link to="/refund-policy" data-testid="link-footer-refund">Refund Policy</Link>
         </div>
 
         <div className="footer-col">
-          <span className="footer-label">Categories</span>
+          <span className="footer-col-label">Categories</span>
           <Link to="/shop" data-testid="link-footer-icons">Icons</Link>
           <a href="/#collections" data-testid="link-footer-templates">Templates</a>
           <a href="/#collections" data-testid="link-footer-ui-kits">UI Kits</a>
         </div>
 
         <div className="footer-col">
-          <span className="footer-label">Contact</span>
+          <span className="footer-col-label">Contact</span>
           <a href="mailto:hello@fluxrico.com" className="footer-contact-line" data-testid="link-footer-email">
             <Mail size={14} /> hello@fluxrico.com
           </a>
           <a href="tel:+212777869335" className="footer-contact-line" data-testid="link-footer-phone">
             <Phone size={14} /> +212 777 869 335
           </a>
-          <span className="footer-label footer-payment-label">We accept</span>
+          <span className="footer-col-label footer-payment-label">We accept</span>
           <div className="footer-payment">
             <span className="payment-badge">PayPal</span>
           </div>

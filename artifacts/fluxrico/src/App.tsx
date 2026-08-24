@@ -274,7 +274,7 @@ function Home() {
                 data-testid={`card-category-${category.title.toLowerCase().replace(' ', '-')}`}
               >
                 <div className="category-topline">
-                  <span>{category.index}</span>
+                  <span>{category.detail}</span>
                   {index === 0 ? <Check size={18} /> : <Sparkles size={17} />}
                 </div>
                 <div className="category-copy">

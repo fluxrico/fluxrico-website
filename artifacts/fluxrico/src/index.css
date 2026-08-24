@@ -215,3 +215,44 @@ button { font: inherit; }
   .footer-bottom { display: block; line-height: 2; }
   .footer-bottom span { display: block; }
 }
+.why-section {
+  width: min(1180px, calc(100% - 72px));
+  margin: 0 auto;
+  padding: 120px 0 145px;
+  border-top: 1px solid var(--line);
+}
+.why-section h2 {
+  margin: 26px 0 50px;
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
+  letter-spacing: -.065em;
+  line-height: .98;
+  font-size: clamp(38px, 5vw, 60px);
+  max-width: 620px;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.why-item h3 {
+  margin: 0 0 10px;
+  font-family: Manrope, sans-serif;
+  font-size: 18px;
+  letter-spacing: -.02em;
+}
+.why-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .why-section { width: min(100% - 42px, 680px); }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+  .why-section { width: calc(100% - 36px); padding: 90px 0 100px; }
+  .why-grid { grid-template-columns: 1fr; gap: 26px; }
+}

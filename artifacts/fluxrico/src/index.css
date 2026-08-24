@@ -11,6 +11,7 @@
   --violet: #7351cf;
   --lilac: #c084fc;
   --gradient: linear-gradient(115deg, #1e3a8a 0%, #5b3fbd 48%, #c084fc 100%);
+  --cta: #2a2a2e;
   font-family: 'DM Sans', sans-serif;
   color: var(--ink);
   background: var(--paper);
@@ -68,7 +69,7 @@ button { font: inherit; }
   min-height: 49px; padding: 0 22px; border-radius: 3px; font-size: 12px; font-weight: 700; letter-spacing: .01em;
   transition: transform .25s ease, box-shadow .25s ease;
 }
-.gradient-button { color: #fff; background: var(--gradient); box-shadow: 0 11px 27px rgba(58, 51, 164, .19); }
+.gradient-button { color: #fff; background: var(--cta); box-shadow: 0 11px 27px rgba(0, 0, 0, .18); }
 .gradient-button:hover, .light-button:hover, .outline-button:hover { transform: translateY(-3px); }
 .text-button { display: flex; align-items: center; gap: 8px; color: var(--ink); font-size: 12px; font-weight: 600; }
 .text-button svg { color: var(--violet); transition: transform .2s; }
@@ -146,8 +147,7 @@ button { font: inherit; }
 .section-kicker--light { color: rgba(255,255,255,.67); }
 .section-kicker--light .kicker-rule { background: rgba(255,255,255,.45); }
 .cta-inner h2 { max-width: 700px; margin-top: 28px; font-size: clamp(53px, 7vw, 96px); }
-.light-button { margin-top: 42px; background: #fff; color: var(--blue); }
-
+.light-button { margin-top: 42px; background: var(--cta); color: #fff; }
 .site-footer { width: min(1180px, calc(100% - 72px)); margin: 0 auto; padding: 78px 0 28px; }
 .footer-main { display: flex; justify-content: space-between; gap: 40px; padding-bottom: 64px; }
 .footer-brand { display: flex; flex-direction: column; gap: 18px; }

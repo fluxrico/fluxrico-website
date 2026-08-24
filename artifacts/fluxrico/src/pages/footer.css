@@ -1,0 +1,132 @@
+.site-footer-full {
+  width: min(1180px, calc(100% - 72px));
+  margin: 0 auto;
+  padding: 78px 0 28px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1.1fr;
+  gap: 40px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid var(--line);
+}
+
+.footer-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer-logo {
+  width: 126px;
+}
+
+.footer-blurb {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+  max-width: 260px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social a {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 700;
+  transition: border-color .2s, color .2s;
+}
+
+.footer-social a:hover {
+  border-color: var(--violet);
+  color: var(--violet);
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-col a {
+  color: var(--ink);
+  font-size: 12px;
+}
+
+.footer-col a:hover {
+  color: var(--violet);
+}
+
+.footer-contact-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink);
+  font-size: 12px;
+}
+
+.footer-contact-line svg {
+  color: var(--violet);
+  flex-shrink: 0;
+}
+
+.footer-payment-label {
+  margin-top: 14px;
+}
+
+.footer-payment {
+  display: flex;
+  gap: 8px;
+}
+
+.payment-badge {
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #003087;
+}
+
+.footer-bottom-full {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+  color: #a3a7b5;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: 8px;
+}
+
+@media (max-width: 900px) {
+  .site-footer-full { width: min(100% - 42px, 680px); }
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .footer-intro { grid-column: 1 / -1; }
+}
+
+@media (max-width: 620px) {
+  .site-footer-full { width: calc(100% - 36px); padding-top: 60px; }
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .footer-bottom-full {
+    display: block;
+    line-height: 2;
+  }
+  .footer-bottom-full span { display: block; }
+}

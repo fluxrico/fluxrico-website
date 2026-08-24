@@ -251,7 +251,32 @@ function Home() {
             that are useful, distinctive, and ready to work.
           </motion.p>
         </section>
-
+       
+        <section className="why-section" aria-labelledby="why-title">
+          <div className="section-kicker">
+            <span>Why Fluxrico</span>
+            <span className="kicker-rule" />
+          </div>
+          <h2 id="why-title">Built for people who ship.</h2>
+          <div className="why-grid">
+            <div className="why-item">
+              <h3>Instant delivery</h3>
+              <p>Get your files immediately after payment — no waiting, no back-and-forth.</p>
+            </div>
+            <div className="why-item">
+              <h3>Production-ready formats</h3>
+              <p>SVG, PNG, and Figma files that drop straight into your existing workflow.</p>
+            </div>
+            <div className="why-item">
+              <h3>7-day guarantee</h3>
+              <p>If a file is broken or you never got your download, we make it right.</p>
+            </div>
+            <div className="why-item">
+              <h3>Human-refined design</h3>
+              <p>Every asset is reviewed and polished by hand — never shipped raw.</p>
+            </div>
+          </div>
+        </section>
         <section className="collections-section" id="collections" aria-labelledby="collections-title">
           <div className="section-heading-row">
             <div>

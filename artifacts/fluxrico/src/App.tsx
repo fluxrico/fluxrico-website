@@ -25,6 +25,7 @@ import NotFound from './pages/not-found';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import RefundPolicy from './pages/RefundPolicy';
+import Footer from './pages/Footer';
 const navItems = [
   { label: 'Shop', href: '/shop' },
   { label: 'Collections', href: '#collections' },
@@ -371,21 +372,7 @@ function Home() {
         </section>
       </main>
 
-      <footer className="site-footer" id="contact">
-        <div className="footer-main">
-          <a href="#" className="footer-brand" data-testid="link-footer-brand">
-            <img src={logoHorizontal} alt="Fluxrico" />
-            <span>Digital products for<br />forward-thinking creators.</span>
-          </a>
-          <div className="footer-links">
-            <div><span className="footer-label">Explore</span><a href="/shop" data-testid="link-footer-collections">Collections</a><a href="/shop/ecommerce-shopping-icons" data-testid="link-footer-icons">Icon pack</a></div>
-            <div><span className="footer-label">Connect</span><a href="mailto:hello@fluxrico.com" data-testid="link-footer-email">Email us</a><a href="#contact" data-testid="link-footer-support">Support</a></div>
-            <div><span className="footer-label">Legal</span><a href="/privacy-policy" data-testid="link-footer-privacy">Privacy Policy</a><a href="/terms-of-service" data-testid="link-footer-terms">Terms of Service</a><a href="/refund-policy" data-testid="link-footer-refund">Refund Policy</a></div>
-            <div><span className="footer-label">Follow along</span><div className="social-links"><a href="#contact" aria-label="Instagram" data-testid="link-instagram"><Instagram size={17} /></a><a href="#contact" aria-label="Dribbble" data-testid="link-dribbble">Dr</a><a href="#contact" aria-label="X" data-testid="link-x">X</a></div></div>
-          </div>
-        </div>
-        <div className="footer-bottom"><span>© 2026 Fluxrico. Made for the curious.</span><span>AI assisted. Human refined.</span></div>
-      </footer>
+      <Footer />
     </div>
   );
 }

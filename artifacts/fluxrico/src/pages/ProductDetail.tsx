@@ -6,6 +6,7 @@ import { getProductById } from '../data/products';
 import { useSeo } from '../lib/useSeo';
 import logoHorizontal from '@assets/Fluxrico_(2)_1785613812245.png';
 import './shop.css';
+import Footer from './Footer';
 
 declare global {
   interface Window {
@@ -177,6 +178,8 @@ function ProductDetail() {
           </div>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }

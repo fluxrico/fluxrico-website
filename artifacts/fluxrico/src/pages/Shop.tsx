@@ -4,6 +4,7 @@ import { products } from '../data/products';
 import { useSeo } from '../lib/useSeo';
 import logoHorizontal from '@assets/Fluxrico_(2)_1785613812245.png';
 import './shop.css';
+import Footer from './Footer';
 
 function Shop() {
   useSeo(
@@ -63,11 +64,7 @@ function Shop() {
         </div>
       </main>
 
-      <footer className="site-footer">
-        <div className="footer-bottom">
-          <span>© 2026 Fluxrico. Made for the curious.</span>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
